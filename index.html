@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NUR SYAFIQAH BAITY</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: url(img/bg12.jpg);
+            background-size: cover;
+            background-position: center;
+            padding-top: 80px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: rgb(24, 65, 102);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: rgb(163, 194, 220);
+            text-decoration: none;
+            font-weight: 700;
+            font-family: cursive;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: rgb(163, 194, 220);
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: antiquewhite;
+            transition: .3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+            width: 100%;
+        }
+
+        .content-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            text-align: center;
+        }
+
+        h2 {
+            background-color: #B0D7F6;
+            font-family: broadway;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            background-color: #B0D7F6;
+            font-family: broadway;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            background-color: #F2F9FE;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgb(24, 65, 102);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: #f3e5f5;
+            background-color: rgb(24, 65, 102);
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #14608c
+                }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">✨💗🫧Betty's Website 🫧💗✨</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="personal.html" target="_blank">Personal Information</a>
+            <a href="family.html" target="_blank">Family</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="hobby.html" target="_blank">Hobby</a>
+            <a href="friends.html" target="_blank">Friends</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-box">
+            <h1>Welcome to my website!</h1>
+                <h3>Hi! Welcome to my personal webpage, where you can explore my projects, learn about my background, and connect with me. This page is exclusively assigned to introduce myself. On this page, there is a brief narrative of who I am, the path I have trodden, and the aspirations that guide my steps forward. I hope you enjoy reading this!</h3>
+                <div>
+                    <a href="personal.html" class="button">Click Here To Know Me Better✨</a>
+            </div>
+    </main>
+
+    <footer>
+        &copy; 2024 Nur Syafiqah Baity. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAMILY</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Flexbox HTML CSS | codehal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to right, #A0C3EE, #FFDEE9);
+            padding-top: 80px;
+            color: #3F6788;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: #184166;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: rgb(163, 194, 220);
+            text-decoration: none;
+            font-weight: 700;
+            font-family: cursive;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: #A3C2DC;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: antiquewhite;
+            transition: width 0.3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        .navbar a:hover {
+            color: #FFDEE9;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-box {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        h4, h2 {
+            background-color: #B0D7F6;
+            font-family: 'Broadway', sans-serif;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            background-color: #F2F9FE;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .about-me-box, .my-education-background {
+            background-color: #f2f2f2;
+            border: 5px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 45%;
+            margin: 20px 10px;
+            text-align: left;
+        }
+
+        .about-me-box h3, .my-education-background h3 {
+            background-color: #B0D7F6;
+            font-family: 'Broadway', sans-serif;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .about-me-box ul, .my-education-background p {
+            margin-bottom: 20px;
+        }
+
+        .about-me-box h5 {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .image-gallery img {
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    border: 5px solid #3F6788;
+}
+
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgb(24, 65, 102);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 10px 20px;
+            }
+
+            .navbar a {
+                margin-left: 20px;
+            }
+
+            .content-box {
+                padding: 15px;
+            }
+
+            .box-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-me-box, .my-education-background {
+                max-width: 100%;
+                margin-right: 0;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+      <a href="index.html" class="logo">✨💗🫧Betty's Website 🫧💗✨</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="personal.html" target="_blank">Personal Information</a>
+            <a href="family.html" target="_blank">Family</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="hobby.html" target="_blank">Hobby</a>
+            <a href="friends.html" target="_blank">Friends</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-box">
+            <h2>Welcome to my webpage on my family. This page is dedicated to introduce my family members. This site is a hub where you can learn more about my beloved family. I hope you are enjoying while reading this!</h2>
+        </div>
+
+        <div class="box-container">
+            <div class="about-me-box">
+            <h3>My Family</h3>
+                <br>Family is an integral part of my life, providing me with unwavering support and inspiration. I come from a close-knit family, and I'd love to share a bit about them with you. Allow me to introduce you to my wonderful family. We are a loving and supportive unit that cherishes our bonds and values. Together, we navigate life's joys and challenges, sharing laughter, love, and memorable moments. They are my pillars of strength and the heartbeat of my life.
+              
+               
+            </div>
+
+            <div class="my-education-background">
+                <h3>My Family Members</h3>
+                    <ul>
+                       <li>My Dad: Mohd Fuad Bin Abu Bakar</li>
+                       <li>My Mom: Siti Rozaini Binti Jusoh</li>
+                       <li>My Brother: Mohd Noor Khairil Bin Mohd Fuad</li>
+                       <li>My Younger Sister: Nur Syafiqah Alia Binti Mohd Fuad</li>
+                       <li>My Younger Brother: Muhammad Danish Hakimi Bin Mohd Fuad</li>
+                    </ul>  
+            </div>
+        </div>
+
+        <div class="image-gallery">
+            <img src="img/family14.jpg" alt="School" title="Me and my little sister" width="300" height="400">
+            <img src="img/family16.jpg" alt="School" title="My mom and dad flexing their sweetness" width="300" height="400">
+            <img src="img/family13.jpg" alt="School" title="Hari Raya!!" width="300" height="400">
+            <img src="img/family15.jpg" alt="School" title="My dad and my lil brother flexing their corn" width="300" height="400">
+            <img src="img/family123.jpg" alt="School" title="Hari Raya!!" width="300" height="400">
+            <img src="img/family11.jpg" alt="School" title="My handsome brother" width="300" height="400">
+            <img src="img/family17.jpg" alt="School" title="'When i was a kid'" width="300" height="400">
+            <img src="img/family18.jpg" alt="School" title="Me and my little brother" width="300" height="400">
+        </div>
+
+        <footer>
+            &copy; 2024 [Nur Syafiqah Baity]. All rights reserved.
+        </footer>
+    </main>
+    <p>
+</body>
+
+</html>

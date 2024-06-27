@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GALLERY</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to right, #A0C3EE, #FFDEE9);
+            padding-top: 80px;
+            color: #3F6788;
+            margin: 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: #184166;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: rgb(163, 194, 220);
+            text-decoration: none;
+            font-weight: 700;
+            font-family: cursive;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: #A3C2DC;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: antiquewhite;
+            transition: width 0.3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        .navbar a:hover {
+            color: #FFDEE9;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-box {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            background-color: #B0D7F6;
+            font-family: 'Broadway', sans-serif;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            background-color: #F2F9FE;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .image-gallery img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 5px solid #FFF;
+            margin: 10px;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-box {
+            background-color: #B0D7F6;
+            border: 2px solid #184166;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgb(24, 65, 102);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 10px 20px;
+            }
+
+            .navbar a {
+                margin-left: 20px;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">✨💗🫧Betty's Website 🫧💗✨</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="personal.html" target="_blank">Personal Information</a>
+            <a href="family.html" target="_blank">Family</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="hobby.html" target="_blank">Hobby</a>
+            <a href="friends.html" target="_blank">Friends</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-box">
+            <h2>Welcome to my webpage on my gallery. This page is dedicated to show you my captured memory that I want to remember it forever. This site is a hub where you can learn more about my family, friends and stay connected with me. I hope you are enjoying while watching this!</h2>
+        </div>
+
+        <div class="section-box">
+            <h3 class="section-heading">My Family 🏠︎❤️</h3>
+        </div>
+
+        <div class="image-gallery">
+            <img src="img/family14.jpg" alt="School" title="Me and my little sister" width="300" height="400">
+            <img src="img/family16.jpg" alt="School" title="My mom and dad flexing their sweetness" width="300" height="400">
+            <img src="img/family13.jpg" alt="School" title="Hari Raya!!" width="300" height="400">
+            <img src="img/family15.jpg" alt="School" title="My dad and my lil brother flexing their corn" width="300" height="400">
+            <img src="img/family123.jpg" alt="School" title="Hari Raya!!" width="300" height="400">
+            <img src="img/family11.jpg" alt="School" title="My handsome brother" width="300" height="400">
+            <img src="img/family17.jpg" alt="School" title="'When i was a kid'" width="300" height="400">
+            <img src="img/family18.jpg" alt="School" title="Me and my little brother" width="300" height="400">
+        </div>
+
+        <div class="section-box">
+            <h3 class="section-heading">My Highschool Life 🎓❤️</h3>
+        </div>
+
+        <div class="image-gallery">
+            <img src="img/h10.jpg" alt="School" title="4 sains girls" width="300" height="400">
+            <img src="img/h1.jpg" alt="School" title="celebrating raya with them" width="300" height="400">
+            <img src="img/h2.jpg" alt="School" title="feeling happy" width="300" height="400">
+            <img src="img/h3.jpg" alt="School" title="3 Amanah" width="300" height="400">
+            <img src="img/h5.jpg" alt="School" title="celebrating birthday together" width="300" height="400">
+            <img src="img/h4.jpg" alt="School" title="cheeseee" width="300" height="400">
+            <img src="img/h6.jpg" alt="School" title="raya with friends" width="300" height="400">
+            <img src="img/h7.jpg" alt="School" title="yes, were holding a SNAKE" width="300" height="400">
+        </div>
+
+        <div class="section-box">
+            <h3 class="section-heading">My Degree Life 👩🏻‍🎓❤️</h3>
+        </div>
+
+        <div class="image-gallery">
+            <img src="img/d5.jpg" alt="School" title="flexing our expensive greentea" width="300" height="400">
+            <img src="img/d1.jpg" alt="School" title="before study week" width="300" height="400">
+            <img src="img/d2.jpg" alt="School" title="feeling happy" width="300" height="400">
+            <img src="img/d6.jpg" alt="School" title="corporate day" width="300" height="400">
+            <img src="img/d4.jpg" alt="School" title="healing before hectic week" width="300" height="400">
+            <img src="img/d3.jpg" alt="School" title="cheeseee" width="300" height="400">
+            <img src="img/d9.jpg" alt="School" title="corporate day" width="300" height="400">
+            <img src="img/d8.jpg" alt="School" title="taking picture as a trophy after examination" width="300" height="400">
+        </div>
+
+        <div class="section-box">
+            <h3 class="section-heading">Movie and Drama 🍿🎥</h3>
+        </div>
+
+        <div class="image-gallery">
+            <img src="img/m1.jpg" alt="School" width="300" height="400">
+            <img src="img/m2.jpg" alt="School" width="300" height="400">
+            <img src="img/m3.jpg" alt="School" width="300" height="400">
+            <img src="img/m4.jpg" alt="School" width="300" height="400">
+            <img src="img/m5.jpg" alt="School" width="300" height="400">
+            <img src="img/m6.jpg" alt="School" width="300" height="400">
+            <img src="img/m10.jpg" alt="School" width="300" height="400">
+            <img src="img/m9.jpg" alt="School" width="300" height="400">
+        </div>
+
+        <div class="section-box">
+            <h3 class="section-heading">Song 🎶🎤</h3>
+        </div>
+
+        <div class="image-gallery">
+            <img src="img/s1.jpg" alt="School" width="300" height="400">
+            <img src="img/s2.jpg" alt="School" width="300" height="400">
+            <img src="img/s3.jpg" alt="School" width="300" height="400">
+            <img src="img/s4.jpg" alt="School" width="300" height="400">
+            <img src="img/s5.jpg" alt="School" width="300" height="400">
+            <img src="img/s8.jpg" alt="School" width="300" height="400">
+            <img src="img/s6.jpg" alt="School" width="300" height="400">
+            <img src="img/s7.jpg" alt="School" width="300" height="400">
+        </div>
+        <p>
+    </main>
+
+    <footer>
+        &copy; 2024 Nur Syafiqah Baity. All rights reserved.
+    </footer>
+</body>
+
+</html>

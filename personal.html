@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PERSONAL INFORMATION</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to right, #A0C3EE, #FFDEE9);
+            padding-top: 80px;
+            color: #3F6788;
+            margin: 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            background: #184166;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px;
+            color: rgb(163, 194, 220);
+            text-decoration: none;
+            font-weight: 700;
+            font-family: cursive;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 18px;
+            color: #A3C2DC;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: antiquewhite;
+            transition: width 0.3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        .navbar a:hover {
+            color: #FFDEE9;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content-box {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            background-color: #B0D7F6;
+            font-family: 'Broadway', sans-serif;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        p,
+        ul {
+            background-color: #F2F9FE;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .about-me-box,
+        .my-education-background {
+            background-color: #f2f2f2;
+            border: 5px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 20px 10px;
+            text-align: left;
+        }
+
+        .about-me-box h3,
+        .my-education-background h3 {
+            background-color: #B0D7F6;
+            font-family: 'Broadway', sans-serif;
+            color: #3F6788;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .about-me-box ul,
+        .my-education-background p {
+            margin-bottom: 20px;
+        }
+
+        .about-me-box h5 {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .section-box {
+            background-color: #B0D7F6;
+            border: 2px solid #184166;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-gallery figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .image-gallery img {
+            width: 200px;
+            height: auto;
+            margin: 0;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            border: 2px solid #2e3656;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-gallery figcaption {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #3F6788;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgb(24, 65, 102);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 10px 20px;
+            }
+
+            .navbar a {
+                margin-left: 20px;
+            }
+
+            .content-box {
+                padding: 15px;
+            }
+
+            .box-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-me-box,
+            .my-education-background {
+                max-width: 100%;
+                margin-right: 0;
+            }
+
+            .image-gallery img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">✨💗🫧Betty's Website 🫧💗✨</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="personal.html" target="_blank">Personal Information</a>
+            <a href="family.html" target="_blank">Family</a>
+            <a href="gallery.html" target="_blank">Gallery</a>
+            <a href="hobby.html" target="_blank">Hobby</a>
+            <a href="friends.html" target="_blank">Friends</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-box">
+            <h2>Welcome to my webpage on my personal information. This page is dedicated to introduce my personal information. This site is a hub where you can learn more about me and stay connected. I hope you are enjoying while reading this!</h2>
+        </div>
+
+        <div class="box-container">
+            <div class="about-me-box">
+                <h3>About Me</h3>
+                <ul>
+                    <li>Name: Nur Syafiqah Baity Binti Mohd Fuad</li>
+                    <li>Birthdate: 11 August 2003</li>
+                    <li>Place of Birth: Kedah, Malaysia</li>
+                    <li>E-mail: nursyafiqahbaity@gmail.com</li>
+                    <li>Phone Number: 017-5170317</li>
+                    <li>Siblings: 4</li>
+                    <li>Birth Order: Second</li>
+                    <li>Social Media: <tr>
+                        <td>Instagram</td>
+                        <td><a href="https://www.instagram.com/syafiqahbaity_?igsh=MWcwNWVid3RybGg0OQ==" target="_blank">syafiqahbaity_</a></td>
+                    </li>
+                </ul>
+                <h5>Feel free to reach out to me via email or connect with me on social media. I look forward to
+                    connecting with you!</h5>
+            </div>
+
+            <div class="my-education-background">
+                <h3>My Education Background</h3>
+                I began my educational journey at Sekolah Kebangsaan Sungai Tiang for my primary schooling, followed by
+                Sekolah Menengah Kebangsaan Sungai Tiang for my secondary education. After completing my secondary
+                school studies, I pursued my Sijil Tinggi Peperiksaan Malaysia at Sekolah Menengah Kebangsaan Syed
+                Ibrahim. I then went on to study for my degree at Universiti Teknologi Mara in Merbok, Kedah.
+            </div>
+        </div>
+
+        <div class="section-box">
+            <h3 class="section-heading">Myself ❤️</h3>
+        </div>
+
+        <div class="image-gallery">
+            
+            <figure>
+                <img src="img/me2.jpg" alt="School" title="Me during 2 months">
+                <figcaption>This is me when I was a baby</figcaption>
+            </figure>
+            <figure>
+                <img src="img/me1.jpg" alt="School" title="Me during 2 months" width="300" height="400">
+                <figcaption>A cute picture of me</figcaption>
+            </figure>
+            <figure>
+                <img src="img/me3.jpg" alt="School" title="My brother looks kinda cute here" width="300" height="400">
+                <figcaption>My brother and our cousins</figcaption>
+            </figure>
+            <figure>
+                <img src="img/me6.jpg" alt="School" title="Feels great" width="300" height="400">
+                <figcaption>A picture with my neighbour</figcaption>
+            </figure>
+        </div>
+
+        <div class="section-box">
+            <h3 class="section-heading">My School ❤️</h3>
+        </div>
+
+        <div class="image-gallery">
+            <figure>
+                <img src="img/skst.jpg" alt="School" title="My Primary School" width="300" height="200">
+                <figcaption>'SK Sungai Tiang'</figcaption>
+            </figure>
+            <figure>
+                <img src="img/smkst.jpg" alt="School" title="My Secondary School" width="300" height="200">
+                <figcaption>'SMK Sungai Tiang'</figcaption>
+            </figure>
+            <figure>
+                <img src="img/uitmmerbok.jpg" alt="School" title="Where I am pursuing my degree" width="300" height="200">
+                <figcaption>'Universiti Teknologi Mara, Kedah'</figcaption>
+            </figure>
+        </div>
+        <p>
+    </main>
+
+    <footer>
+        &copy; 2024 Nur Syafiqah Baity. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
